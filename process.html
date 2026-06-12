@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Safwan Ahmed - Iterative Design Process" />
+  <meta name="author" content="Safwan Ahmed" />
+  <title>Process | Safwan Ahmed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="fav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">
+          <img src="download.jpg" alt="Logo" />
+        </a>
+      </div>
+      <ul class="navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="process.html" class="active">Process</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home-card">
+
+    <section class="resource-card">
+      <h2>Iterative Design Process</h2>
+      <p class="section-intro">How I go from idea to finished game through planning, testing, and refinement.</p>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-header">
+            <span class="process-num">1</span>
+            <h3>Brainstorming & Concept</h3>
+          </div>
+          <div class="process-img">
+            <div class="placeholder small">
+              <span>📝</span>
+              <p>Mind Map</p>
+            </div>
+          </div>
+          <p>
+            I start by writing ideas and drawing mind maps. For Neon Runner, I analyzed games like <em>Celeste</em> to understand what makes platforming fun. I created a one-page concept document: <em>"Fast platforming with time mechanics in a neon city."</em>
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-header">
+            <span class="process-num">2</span>
+            <h3>Wireframes & Flowcharts</h3>
+          </div>
+          <div class="process-img">
+            <div class="placeholder small">
+              <span>📐</span>
+              <p>Level Sketch</p>
+            </div>
+          </div>
+          <p>
+            Before opening Unity, I draw level layouts on paper and create flowcharts showing game flow: Menu → Tutorial → Gameplay → Pause → Game Over. This planning prevents scope creep and keeps development focused.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-header">
+            <span class="process-num">3</span>
+            <h3>Grey-Boxing & Prototyping</h3>
+          </div>
+          <div class="process-img">
+            <div class="placeholder small">
+              <span>🧱</span>
+              <p>Grey-Box Screenshot</p>
+            </div>
+          </div>
+          <p>
+            I build with simple cubes first—no art. For Neon Runner Level 3, grey-boxing took 2 hours and testing showed jumps were too hard. Adjusting platform distances took 5 minutes in the grey-box, saving hours of art rework. This proves: <em>fun must come before aesthetics.</em>
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-header">
+            <span class="process-num">4</span>
+            <h3>Playtesting & Refinement</h3>
+          </div>
+          <div class="process-img">
+            <div class="placeholder small">
+              <span>🎮</span>
+              <p>Playtest Data</p>
+            </div>
+          </div>
+          <p>
+            I run 3-5 structured playtest sessions per project, recording completion times and feedback. In Chrono Cube, players missed the rewind tutorial. The fix: a forced slow-motion sequence that <strong>shows</strong> the mechanic before asking players to use it. Tutorial dropout dropped from 40% to 5%.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-header">
+            <span class="process-num">5</span>
+            <h3>Final Polish & GDD</h3>
+          </div>
+          <div class="process-img">
+            <div class="placeholder small">
+              <span>✨</span>
+              <p>Final Build</p>
+            </div>
+          </div>
+          <p>
+            I add art, sound, and UI polish while maintaining the core design. I document everything in a <strong>Game Design Document (GDD)</strong> including mechanics specs, level rationale, and post-mortem analysis. This shows professional workflow and helps me remember why I made each decision.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="resource-card">
+    <p>© <span id="year"></span> Safwan Ahmed | Game Design Portfolio</p>
+    <p class="footer-tools">Built with Unity, Visual Studio, GitHub, and C#</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

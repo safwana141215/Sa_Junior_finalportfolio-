@@ -20,448 +20,79 @@
       <div class="navbar-left">
         <a href="index.html">
           <img src="download.jpg" alt="Logo" />
-          <span>Safwan Ahmed</span>
         </a>
       </div>
       <ul class="navbar-right">
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#competitions">Competitions</a></li>
-        <li><a href="#reflection">Reflection</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="home-card">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Game Design Portfolio</h1>
-        <p>Hi, I'm <strong>Safwan Ahmed</strong>. I'm a high school student passionate about creating games with Unity, C#, and creative problem-solving. This portfolio shows my journey through the Game Design pathway.</p>
-        <a href="#projects" class="btn">View My Projects</a>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="card" id="about">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div class="about-pic">
+    <!-- ABOUT / BIO -->
+    <section class="resource-card">
+      <div class="bio">
+        <div class="bio-pic">
           <img src="fav.png" alt="Safwan Ahmed" />
         </div>
-        <div class="about-text">
+        <div class="bio-text">
+          <h1>Safwan Ahmed</h1>
+          <h4>Student Developer / Game Designer at Thomas A. Edison CTE High School</h4>
           <p>
-            I'm a student in the Game Design pathway with a goal of becoming a <strong>professional game designer</strong>. I love how games combine art, code, and storytelling to create experiences that people remember.
-          </p>
-          <p>
-            I've learned to use <strong>Unity, Visual Studio, C#, and GitHub</strong> to build games from scratch. I enjoy the problem-solving side of programming—figuring out why something isn't working and fixing it feels like solving a puzzle.
-          </p>
-          <p>
-            My career goal is to work at a game studio where I can design systems and mechanics that make players feel challenged, rewarded, and immersed. This portfolio documents my growth from beginner projects to more complex games.
+            I am a student passionate about game design, programming, and creating interactive experiences. I like to build games in Unity, write C# code, and improve my projects through testing and feedback. My goal is to become a professional game designer who creates meaningful and fun experiences for players.
           </p>
           <div class="skills">
-            <span class="skill">Unity 2D/3D</span>
-            <span class="skill">C#</span>
-            <span class="skill">Visual Studio</span>
-            <span class="skill">GitHub</span>
-            <span class="skill">UI/UX</span>
-            <span class="skill">VFX & Lighting</span>
+            <span class="skill-tag">Unity 2D/3D</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">UI/UX</span>
+            <span class="skill-tag">VFX & Lighting</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GAME DESIGN PROJECTS -->
-    <section class="card" id="projects">
-      <h2>Game Design Collection</h2>
-      <p class="section-intro">These projects show my work across the Unity Essentials, Creative Core, and Junior Programmer Pathways.</p>
-
-      <!-- Project 1 -->
-      <article class="project">
-        <div class="project-img">
-          <div class="placeholder">
-            <span>🎮</span>
-            <p>Neon Runner Screenshot</p>
-          </div>
-        </div>
-        <div class="project-details">
-          <h3>Neon Runner: Cyberpunk Platformer</h3>
-          <div class="project-meta">
-            <span><strong>Tools:</strong> Unity, C#, Visual Studio</span>
-            <span><strong>Time:</strong> 6 Weeks</span>
-            <span><strong>Team:</strong> Solo</span>
-          </div>
-          <p>
-            A fast-paced 2D platformer where players run and jump through a neon city. I built this for the Junior Programmer Pathway.
-          </p>
-          <h4>What I Did:</h4>
-          <ul>
-            <li>Programmed smooth player movement with jumping and wall-sliding using Rigidbody2D physics</li>
-            <li>Created enemy AI that patrols, chases, and attacks using C# state machines</li>
-            <li>Added neon glow effects with Unity's 2D lights and particle systems</li>
-            <li>Used GitHub to save different versions of my code so I could go back if something broke</li>
-          </ul>
-          <div class="reflection-box">
-            <h4>What I Learned:</h4>
-            <p>
-              The first version of my jumping felt "floaty" and players didn't like it. After testing with friends, I learned about <strong>coyote-time</strong>—giving players a tiny window to jump after leaving a platform. This small change made the game feel much better. I also learned that GitHub is a lifesaver when you need to undo a mistake!
-            </p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="btn-small">GitHub</a>
-            <a href="#" class="btn-small">Play Demo</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="project">
-        <div class="project-img">
-          <div class="placeholder">
-            <span>🧩</span>
-            <p>Chrono Cube Screenshot</p>
-          </div>
-        </div>
-        <div class="project-details">
-          <h3>Chrono Cube: Puzzle Game</h3>
-          <div class="project-meta">
-            <span><strong>Tools:</strong> Unity, C#, Visual Studio</span>
-            <span><strong>Time:</strong> 4 Weeks</span>
-            <span><strong>Team:</strong> Partner</span>
-          </div>
-          <p>
-            A 3D puzzle game where you rewind time to solve challenges. Built for the Creative Core Pathway with a classmate.
-          </p>
-          <h4>What I Did:</h4>
-          <ul>
-            <li>Programmed a time-rewind system that records player positions and plays them backward</li>
-            <li>Designed 5 puzzle rooms using grey-boxing (simple shapes) before adding art</li>
-            <li>Created a clean HUD with energy meters and interaction prompts using Unity UI</li>
-            <li>Used lighting to show players when puzzle phases changed</li>
-          </ul>
-          <div class="reflection-box">
-            <h4>What I Learned:</h4>
-            <p>
-              Working with a partner taught me how important <strong>communication</strong> is. We made a shared document listing who was doing what, and we met weekly to check progress. The hardest part was making the time-rewind work with physics objects—they kept clipping through walls. We fixed it by adding collision checks before moving objects. This showed me that <strong>games get better through testing, not just planning</strong>.
-            </p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="btn-small">GitHub</a>
-            <a href="#" class="btn-small">Play Demo</a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="project">
-        <div class="project-img">
-          <div class="placeholder">
-            <span>🌌</span>
-            <p>Starlight Voyager Screenshot</p>
-          </div>
-        </div>
-        <div class="project-details">
-          <h3>Starlight Voyager: Space Explorer</h3>
-          <div class="project-meta">
-            <span><strong>Tools:</strong> Unity, C#</span>
-            <span><strong>Time:</strong> 3 Weeks</span>
-            <span><strong>Team:</strong> Solo</span>
-          </div>
-          <p>
-            My first complete Unity project from the Unity Essentials Pathway. A simple space exploration game.
-          </p>
-          <h4>What I Did:</h4>
-          <ul>
-            <li>Built multiple scenes with loading screens and saved player data between levels</li>
-            <li>Created reusable asteroid and collectible objects using Unity prefabs</li>
-            <li>Programmed a smooth camera that follows the player</li>
-          </ul>
-          <div class="reflection-box">
-            <h4>What I Learned:</h4>
-            <p>
-              This was my first time using Unity, so everything was new. I learned how Unity's <strong>component system</strong> works—how you attach scripts to objects to give them behavior. I also started using GitHub here, making a habit of saving my work after each feature. Looking back, my code was messy, but it worked. This project reminds me how much I've grown.
-            </p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="btn-small">GitHub</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- ITERATIVE DESIGN PROCESS -->
-    <section class="card" id="process">
-      <h2>Iterative Design Process</h2>
-      <p class="section-intro">How I go from idea to finished game through testing and refinement.</p>
-
-      <div class="process-step">
-        <div class="step-header">
-          <span class="step-num">1</span>
-          <h3>Brainstorming & Concept</h3>
-        </div>
-        <div class="step-content">
-          <div class="step-img">
-            <div class="placeholder small">
-              <span>📝</span>
-              <p>Mind Map</p>
-            </div>
-          </div>
-          <p>
-            I start by writing down ideas and drawing mind maps. For Neon Runner, I looked at games like <em>Celeste</em> to see what makes platforming fun. I wrote a one-page document explaining the core idea: <em>"Fast platforming with time mechanics in a neon city."</em>
-          </p>
-        </div>
-      </div>
-
-      <div class="process-step">
-        <div class="step-header">
-          <span class="step-num">2</span>
-          <h3>Wireframes & Planning</h3>
-        </div>
-        <div class="step-content">
-          <div class="step-img">
-            <div class="placeholder small">
-              <span>📐</span>
-              <p>Level Sketch</p>
-            </div>
-          </div>
-          <p>
-            Before opening Unity, I draw level layouts on paper. I sketch where platforms go, where enemies should be, and where the "aha moment" happens. I also make flowcharts showing how screens connect: Menu → Game → Pause → Game Over. This planning stops me from getting lost later.
-          </p>
-        </div>
-      </div>
-
-      <div class="process-step">
-        <div class="step-header">
-          <span class="step-num">3</span>
-          <h3>Grey-Box Prototyping</h3>
-        </div>
-        <div class="step-content">
-          <div class="step-img">
-            <div class="placeholder small">
-              <span>🧱</span>
-              <p>Grey-Box Screenshot</p>
-            </div>
-          </div>
-          <p>
-            I build the game using simple shapes (cubes and planes) first—no art yet. This lets me test if the jumping distances feel right and if the level is fun. For Neon Runner Level 3, grey-boxing took 2 hours, and testing showed the jumps were too hard. Fixing the spacing took 5 minutes in the grey-box, but would have taken hours if I had already added art.
-          </p>
-        </div>
-      </div>
-
-      <div class="process-step">
-        <div class="step-header">
-          <span class="step-num">4</span>
-          <h3>Playtesting & Fixing</h3>
-        </div>
-        <div class="step-content">
-          <div class="step-img">
-            <div class="placeholder small">
-              <span>🎮</span>
-              <p>Playtest Notes</p>
-            </div>
-          </div>
-          <p>
-            I have friends play my game and watch where they get stuck. In Chrono Cube, players kept missing the tutorial for time-rewind. Instead of adding more text, I made the game <strong>slow down automatically</strong> to show the mechanic in action. This "show, don't tell" approach worked much better—tutorial dropout went from 40% to almost zero.
-          </p>
-        </div>
-      </div>
-
-      <div class="process-step">
-        <div class="step-header">
-          <span class="step-num">5</span>
-          <h3>Final Polish & Documentation</h3>
-        </div>
-        <div class="step-content">
-          <div class="step-img">
-            <div class="placeholder small">
-              <span>✨</span>
-              <p>Final Build</p>
-            </div>
-          </div>
-          <p>
-            In the final phase, I add art, sound, and UI polish. I also write a <strong>Game Design Document (GDD)</strong> that explains what the game is, how it works, and why I made certain choices. This document helps me remember my decisions and shows teachers or employers that I can plan professionally.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMPETITIONS -->
-    <section class="card" id="competitions">
-      <h2>Competitions & Creative Projects</h2>
-      <p class="section-intro">Games and apps I've built for competitions and challenges.</p>
-
-      <article class="competition">
-        <div class="comp-badge">Games for Change 2025</div>
-        <h3>Empathy Engine</h3>
-        <div class="comp-meta">
-          <span>Theme: Social Justice</span>
-          <span>Team: 3 people</span>
-          <span>Time: 48 hours</span>
-        </div>
-        <p>
-          A narrative game where players see the world from different characters' perspectives. Built for the G4C Student Challenge.
-        </p>
-        <div class="reflection-box">
-          <h4>My Experience:</h4>
-          <p>
-            This was my first game jam, and the 48-hour deadline was intense. We had to cut features to finish on time—we aimed for a 10-minute experience instead of something longer. I handled the programming while teammates wrote the story and made art. We used GitHub to share code in real-time. We didn't win, but the judges said our <strong>dialogue system was surprisingly advanced for a game jam</strong>. I learned that working fast means choosing what matters most.
-          </p>
-        </div>
-      </article>
-
-      <article class="competition">
-        <div class="comp-badge">Emoti-Con CS Fair 2025</div>
-        <h3>Neural Nexus</h3>
-        <div class="comp-meta">
-          <span>Theme: AI & Humanity</span>
-          <span>Solo Entry</span>
-          <span>Time: 3 months</span>
-        </div>
-        <p>
-          A Unity simulation where you train an AI companion through positive reinforcement. Submitted to Emoti-Con NYC.
-        </p>
-        <div class="reflection-box">
-          <h4>My Experience:</h4>
-          <p>
-            I had to present this to judges who weren't all programmers, so I practiced explaining <strong>why I chose certain code solutions</strong> in simple terms. I did a live demo and answered questions. I placed in the <strong>Top 10 out of 200+ entries</strong>, and judges specifically praised my presentation and clear documentation. This taught me that <strong>being able to explain your work is just as important as building it</strong>.
-          </p>
-        </div>
-      </article>
-
-      <article class="competition">
-        <div class="comp-badge">InfyAPP Challenge 2025</div>
-        <h3>EcoQuest</h3>
-        <div class="comp-meta">
-          <span>Theme: Sustainability</span>
-          <span>Team: 4 people</span>
-          <span>Time: 6 weeks</span>
-        </div>
-        <p>
-          A web app that gamifies environmental actions like recycling and saving energy. Uses game design ideas in a non-game app.
-        </p>
-        <div class="reflection-box">
-          <h4>My Experience:</h4>
-          <p>
-            I applied game design concepts like <strong>daily challenges, streaks, and progress bars</strong> to motivate real-world behavior. We used Agile sprints with a task board to stay organized. One challenge was making the app fun without being addictive—we added "healthy limits" so users wouldn't feel pressured. This project showed me that <strong>game designers have a responsibility to think about player wellbeing</strong>, not just engagement.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <!-- REFLECTION -->
-    <section class="card" id="reflection">
-      <h2>Reflection & Professional Growth</h2>
-
-      <div class="reflection-section">
-        <h3>My Strengths</h3>
-        <div class="strengths">
-          <div class="strength">
-            <span>💡</span>
-            <h4>Systems Thinking</h4>
-            <p>I see games as connected systems. When I change one thing, I think about how it affects everything else.</p>
-          </div>
-          <div class="strength">
-            <span>🔧</span>
-            <h4>Technical Skills</h4>
-            <p>My C# knowledge lets me turn ideas into working prototypes quickly without waiting for others.</p>
-          </div>
-          <div class="strength">
-            <span>🔄</span>
-            <h4>Iterative Mindset</h4>
-            <p>I don't get discouraged by broken builds. Each failure teaches me something about what players actually want.</p>
-          </div>
-          <div class="strength">
-            <span>🤝</span>
-            <h4>Teamwork</h4>
-            <p>I communicate clearly in group projects and keep shared documents so everyone knows what's happening.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="reflection-section">
-        <h3>Challenges I've Faced</h3>
-        <div class="challenge">
-          <h4>Scope Creep (Adding Too Much)</h4>
-          <p>
-            Early on, I wanted every cool idea in my games. This caused me to miss deadlines. Now I define a <strong>Minimum Viable Product (MVP)</strong>—the simplest version that works—and save extra ideas for later. I keep a "parking lot" list for features that don't fit the current project.
-          </p>
-        </div>
-        <div class="challenge">
-          <h4>Art & Visuals</h4>
-          <p>
-            I'm stronger at code than art. Instead of avoiding this, I learned Unity's <strong>Shader Graph and VFX Graph</strong> to make cool effects through code. I also collaborate with artistic teammates and practice describing what I need visually so they can help.
-          </p>
-        </div>
-        <div class="challenge">
-          <h4>Accepting Feedback</h4>
-          <p>
-            I used to take negative playtest feedback personally. Now I understand that <strong>if players are confused, the design is unclear—not the players</strong>. I write down patterns from multiple testers instead of reacting to one person's opinion.
-          </p>
-        </div>
-      </div>
-
-      <div class="final-statement">
-        <h3>My Career Vision</h3>
-        <blockquote>
-          "My goal is to become a <strong>professional game designer</strong> who creates experiences that challenge and inspire players. The Game Design pathway has given me more than coding skills—it's taught me how to <strong>think like a designer, plan like a professional, and collaborate like industry developers</strong>. From Unity projects to GitHub version control, from GDDs to competition pitches, every experience has prepared me for what's next."
-        </blockquote>
-        <p class="signature">— Safwan Ahmed</p>
-        
-        <div class="goals">
-          <h4>Next Steps:</h4>
-          <ul>
-            <li>Get Unity Certified Associate: Programmer</li>
-            <li>Build a multiplayer game to learn networking</li>
-            <li>Contribute to an open-source game project on GitHub</li>
-            <li>Apply for internships at game studios</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="card" id="contact">
-      <h2>Contact</h2>
-      <p class="section-intro">Want to collaborate or have questions? Reach out!</p>
-      
-      <div class="contact-grid">
-        <div class="contact-item">
-          <div class="contact-icon-box">
-            <img src="icon1.jpg" alt="Email" />
-          </div>
-          <h3>Email</h3>
-          <a href="mailto:Safwana13@nycstudents.net">Safwana13@nycstudents.net</a>
-          <p>For project questions or collaboration</p>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon-box">
-            <img src="icon2.jpg" alt="LinkedIn" />
-          </div>
-          <h3>LinkedIn</h3>
-          <a href="https://www.linkedin.com/in/safwan-ahmed-6b64633a7/" target="_blank">Safwan Ahmed</a>
-          <p>Connect for networking</p>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon-box">
-            <span>💻</span>
-          </div>
-          <h3>GitHub</h3>
-          <a href="#">github.com/safwanahmed</a>
-          <p>See my code and version control</p>
-        </div>
+    <!-- QUICK LINKS -->
+    <section class="resource-card">
+      <h2>Portfolio Overview</h2>
+      <p class="section-intro">Explore my work across game design, development, and competitions.</p>
+      <div class="overview-grid">
+        <a href="projects.html" class="overview-card">
+          <span>🎮</span>
+          <h3>Game Design Collection</h3>
+          <p>Unity projects showcasing C#, VFX, lighting, and gameplay systems</p>
+        </a>
+        <a href="process.html" class="overview-card">
+          <span>🔄</span>
+          <h3>Iterative Design Process</h3>
+          <p>From brainstorming to final polish with playtesting documentation</p>
+        </a>
+        <a href="competitions.html" class="overview-card">
+          <span>🏆</span>
+          <h3>Competitions</h3>
+          <p>G4C, Emoti-Con, and InfyAPP Challenge submissions</p>
+        </a>
+        <a href="reflection.html" class="overview-card">
+          <span>💭</span>
+          <h3>Reflection & Growth</h3>
+          <p>Strengths, challenges, and career vision in game design</p>
+        </a>
       </div>
     </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer>
-    <p><strong>Safwan Ahmed</strong> | Game Design Portfolio</p>
-    <p>© <span id="year"></span> | Built with Unity, Visual Studio, GitHub, and passion.</p>
+  <footer class="resource-card">
+    <p>© <span id="year"></span> Safwan Ahmed | Game Design Portfolio</p>
+    <p class="footer-tools">Built with Unity, Visual Studio, GitHub, and C#</p>
   </footer>
 
   <script>

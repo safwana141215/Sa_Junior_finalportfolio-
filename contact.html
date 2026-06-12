@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Safwan Ahmed" />
+  <meta name="author" content="Safwan Ahmed" />
+  <title>Contact | Safwan Ahmed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="fav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">
+          <img src="download.jpg" alt="Logo" />
+        </a>
+      </div>
+      <ul class="navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home-card">
+
+    <section class="resource-card">
+      <h2>Contact</h2>
+      <p class="section-intro">Want to collaborate or have questions? Let's connect!</p>
+      <div class="contact-links">
+        <div class="contact-item">
+          <img src="icon1.jpg" alt="Email Icon" class="contact-icon" />
+          <h3>Email</h3>
+          <a href="mailto:Safwana13@nycstudents.net">Safwana13@nycstudents.net</a>
+          <p>For project questions or collaboration</p>
+        </div>
+        <div class="contact-item">
+          <img src="icon2.jpg" alt="LinkedIn Icon" class="contact-icon" />
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/safwan-ahmed-6b64633a7/" target="_blank">Safwan Ahmed</a>
+          <p>Connect for networking</p>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon-fallback">💻</div>
+          <h3>GitHub</h3>
+          <a href="#">github.com/safwanahmed</a>
+          <p>See my code and version control</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="resource-card">
+    <p>© <span id="year"></span> Safwan Ahmed | Game Design Portfolio</p>
+    <p class="footer-tools">Built with Unity, Visual Studio, GitHub, and C#</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
