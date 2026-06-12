@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Safwan Ahmed - Game Design Projects" />
+  <meta name="description" content="Safwan Ahmed - Game Projects" />
   <meta name="author" content="Safwan Ahmed" />
   <title>Projects | Safwan Ahmed</title>
   <link rel="stylesheet" href="style.css" />
@@ -25,8 +25,6 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="process.html">Process</a></li>
-        <li><a href="competitions.html">Competitions</a></li>
-        <li><a href="reflection.html">Reflection</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -35,132 +33,152 @@
   <main class="home-card">
 
     <section class="resource-card">
-      <h2>Game Design Collection</h2>
-      <p class="section-intro">These projects showcase my work with Unity, Visual Studio, and GitHub across the Unity Essentials, Creative Core, and Junior Programmer Pathways.</p>
+      <h2>My Games</h2>
+      <p class="section-intro">Games I built in Unity with gameplay, sound, and VFX.</p>
 
-      <!-- Project 1 -->
+      <!-- Project 1: Yggdrasil -->
       <div class="project">
         <div class="project-media">
-          <div class="project-placeholder">
-            <span>🎮</span>
-            <p>Neon Runner Screenshot</p>
-          </div>
+          <iframe src="https://play.unity.com/api/v1/games/game/621772c9-86ab-4266-ad51-6c1175a675c0/build/latest/frame" 
+                  title="Yggdrasil" 
+                  allowfullscreen>
+          </iframe>
         </div>
         <div class="project-info">
-          <h3>Neon Runner: Cyberpunk Platformer</h3>
+          <h3>Yggdrasil</h3>
           <div class="project-meta">
-            <span><strong>Role:</strong> Lead Programmer & Designer</span>
-            <span><strong>Engine:</strong> Unity 2022 LTS</span>
-            <span><strong>Time:</strong> 6 Weeks</span>
+            <span><strong>Engine:</strong> Unity</span>
+            <span><strong>Time:</strong> 8 Weeks</span>
             <span><strong>Team:</strong> Solo</span>
           </div>
           <p>
-            A fast-paced 2D platformer set in a neon city. Built for the Junior Programmer Pathway, this game demonstrates player movement physics, enemy AI, and dynamic lighting.
+            You are the last survivor of a prehistoric tropical world. Navigate through jungles, gather resources, and rebuild civilization.
           </p>
           <h4>What I Built:</h4>
           <ul>
-            <li>Player controller with coyote-time jumping and wall-sliding using Rigidbody2D</li>
-            <li>Enemy AI state machine for patrol, chase, and attack behaviors using C#</li>
-            <li>Neon glow effects with Unity's 2D lights and particle systems</li>
-            <li>Adaptive audio using Unity's Audio Mixer</li>
-            <li>Version control with GitHub feature branches</li>
+            <li>Open world exploration with jungle environments</li>
+            <li>Resource gathering system</li>
+            <li>Strategic competition mechanics</li>
+            <li>Survival and civilization-building gameplay</li>
           </ul>
           <div class="reflection">
-            <h4>Reflection:</h4>
+            <h4>What I Learned:</h4>
             <p>
-              The first version of my jumping felt "floaty" and playtesters didn't like it. After 3 rounds of feedback, I learned about <strong>coyote-time</strong>—giving players a tiny window to jump after leaving a platform. This small change made the game feel much more responsive. I also learned that <strong>GitHub is essential</strong> when I had to rollback a buggy lighting build. This project taught me that games get better through testing, not just planning.
+              Building an open world taught me how to manage large scenes in Unity. I learned to balance exploration with clear goals so players don't get lost.
             </p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="btn-small">View on GitHub</a>
-            <a href="#" class="btn-small">Play Demo</a>
-            <a href="#" class="btn-small">Watch Gameplay</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 2: Roll a Ball -->
       <div class="project">
         <div class="project-media">
-          <div class="project-placeholder">
-            <span>🧩</span>
-            <p>Chrono Cube Screenshot</p>
-          </div>
+          <iframe src="https://play.unity.com/api/v1/games/game/a4fee4e1-6c7b-4da7-8dac-a6cc9f8b50f3/build/latest/frame" 
+                  title="Roll a Ball" 
+                  allowfullscreen>
+          </iframe>
         </div>
         <div class="project-info">
-          <h3>Chrono Cube: Temporal Puzzle Adventure</h3>
+          <h3>Roll a Ball</h3>
           <div class="project-meta">
-            <span><strong>Role:</strong> Systems Designer & Programmer</span>
-            <span><strong>Engine:</strong> Unity 2022 LTS</span>
-            <span><strong>Time:</strong> 4 Weeks</span>
-            <span><strong>Team:</strong> 2-Person Team</span>
+            <span><strong>Engine:</strong> Unity</span>
+            <span><strong>Time:</strong> 2 Weeks</span>
+            <span><strong>Team:</strong> Solo</span>
           </div>
           <p>
-            A 3D puzzle game where players rewind time to solve environmental challenges. Built for the Creative Core pathway with a partner.
+            Roll a ball around to collect points. Features collectible sounds, rolling sounds, win sounds, and VFX effects.
           </p>
           <h4>What I Built:</h4>
           <ul>
-            <li>Time-reversal system using C# lists to record and playback player/object states</li>
-            <li>5 puzzle rooms designed through grey-boxing and playtest iteration</li>
-            <li>Clean HUD with temporal energy meter and interaction prompts using Unity UI</li>
-            <li>Baked and real-time lighting to signal puzzle phases to players</li>
+            <li>Ball physics and rolling controls</li>
+            <li>Collectible system with sound effects</li>
+            <li>VFX particle effects when collecting</li>
+            <li>UI buttons for reset, play, and instructions</li>
+            <li>Win screen after collecting all points</li>
           </ul>
           <div class="reflection">
-            <h4>Reflection:</h4>
+            <h4>What I Learned:</h4>
             <p>
-              Working with a partner taught me how important <strong>communication and documentation</strong> are. We kept a shared Game Design Document (GDD) and met weekly to align priorities. The hardest bug was objects clipping through walls during rewind—we fixed it by adding predictive collision checks. This experience showed me that <strong>great games come from iteration and teamwork</strong>, not solo perfection.
+              This was my first Unity project with sound and VFX. I learned how audio and visual feedback make simple games feel polished and fun.
             </p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="btn-small">View on GitHub</a>
-            <a href="#" class="btn-small">Play Demo</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 3 -->
+      <!-- Project 3: Gem Collector -->
       <div class="project">
         <div class="project-media">
-          <div class="project-placeholder">
-            <span>🌌</span>
-            <p>Starlight Voyager Screenshot</p>
-          </div>
+          <iframe src="https://play.unity.com/api/v1/games/game/f44fc1e1-14bc-43ef-a99e-f6722cd3f17f/build/latest/frame" 
+                  title="Gem Collector" 
+                  allowfullscreen>
+          </iframe>
         </div>
         <div class="project-info">
-          <h3>Starlight Voyager: Space Exploration</h3>
+          <h3>Gem Collector</h3>
           <div class="project-meta">
-            <span><strong>Role:</strong> Developer</span>
-            <span><strong>Engine:</strong> Unity 2021</span>
+            <span><strong>Engine:</strong> Unity</span>
             <span><strong>Time:</strong> 3 Weeks</span>
             <span><strong>Team:</strong> Solo</span>
           </div>
           <p>
-            My first complete Unity project from the Unity Essentials pathway. A simple 3D space exploration experience.
+            Collect all the gems while avoiding harmful invasive crabs and obstacles to win.
           </p>
           <h4>What I Built:</h4>
           <ul>
-            <li>Multiple scenes with persistent data using PlayerPrefs and loading transitions</li>
-            <li>Reusable asteroid and collectible prefabs with randomized spawn positions</li>
-            <li>Smooth follow camera using Vector3.Lerp for polished feel</li>
+            <li>Gem collection system with scoring</li>
+            <li>Enemy crab AI that patrols and chases</li>
+            <li>Obstacle avoidance gameplay</li>
+            <li>Win and lose conditions</li>
           </ul>
           <div class="reflection">
-            <h4>Reflection:</h4>
+            <h4>What I Learned:</h4>
             <p>
-              This was my first time using Unity, so everything was new. I learned how Unity's <strong>component-based architecture</strong> works—attaching scripts to objects to give them behavior. I started using GitHub here, committing after each feature. Looking back, my code organization was messy, but it worked. I keep this project in my portfolio to show my <strong>growth mindset</strong> and how far I've come since the beginning.
+              Adding enemies made me think about player challenge vs. fairness. I balanced crab speed and gem placement so the game is hard but not frustrating.
             </p>
-          </div>
-          <div class="project-links">
-            <a href="#" class="btn-small">View on GitHub</a>
           </div>
         </div>
       </div>
+
+      <!-- Project 4: Jungle Adventure -->
+      <div class="project">
+        <div class="project-media">
+          <iframe src="https://play.unity.com/api/v1/games/game/86f586aa-b17b-4b12-bd68-310eec41abc3/build/latest/frame" 
+                  title="Jungle Adventure" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+        <div class="project-info">
+          <h3>Jungle Adventure</h3>
+          <div class="project-meta">
+            <span><strong>Engine:</strong> Unity</span>
+            <span><strong>Time:</strong> 4 Weeks</span>
+            <span><strong>Team:</strong> Solo</span>
+          </div>
+          <p>
+            Explore a jungle world, avoid dangers, and complete your adventure.
+          </p>
+          <h4>What I Built:</h4>
+          <ul>
+            <li>Jungle environment with exploration</li>
+            <li>Enemy and obstacle systems</li>
+            <li>Level progression and goals</li>
+          </ul>
+          <div class="reflection">
+            <h4>What I Learned:</h4>
+            <p>
+              This project helped me practice level design. I learned to guide players through a space using lighting and object placement instead of just instructions.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </main>
 
   <footer class="resource-card">
     <p>© <span id="year"></span> Safwan Ahmed | Game Design Portfolio</p>
-    <p class="footer-tools">Built with Unity, Visual Studio, GitHub, and C#</p>
+    <p class="footer-tools">Built with Unity, Visual Studio, and GitHub</p>
   </footer>
 
   <script>
