@@ -21,7 +21,6 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
 .navbar {
   background-color: rgba(190, 220, 230, 0.95);
   padding: 1em 2em;
@@ -67,14 +66,12 @@ body {
   text-underline-offset: 4px;
 }
 
-/* MAIN */
 .home-card {
   max-width: 1000px;
   margin: 5em auto 2.5em;
   padding: 2em;
 }
 
-/* CARDS */
 .resource-card {
   background-color: rgba(215, 238, 245, 0.85);
   margin: 2em auto;
@@ -83,7 +80,6 @@ body {
   border: 2px solid #9fcdd9;
 }
 
-/* BIO */
 .bio {
   text-align: center;
 }
@@ -135,7 +131,6 @@ body {
   border: 1px solid #8cc2d1;
 }
 
-/* OVERVIEW */
 .overview-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -178,7 +173,6 @@ body {
   line-height: 1.5;
 }
 
-/* SECTION HEADERS */
 .resource-card h2 {
   color: #1a5f7a;
   font-size: 1.75rem;
@@ -191,7 +185,6 @@ body {
   font-size: 1rem;
 }
 
-/* PROJECTS */
 .project {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -303,7 +296,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* PROCESS */
 .process-step {
   display: flex;
   align-items: flex-start;
@@ -345,7 +337,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* CONTACT */
 .contact-links {
   display: flex;
   justify-content: center;
@@ -401,7 +392,6 @@ body {
   text-decoration: underline;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   font-size: 0.9em;
@@ -418,7 +408,6 @@ footer p {
   font-weight: 600;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .navbar {
     padding: 1em;
