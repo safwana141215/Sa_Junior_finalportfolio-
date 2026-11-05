@@ -489,26 +489,6 @@ footer p {
   position: relative;
 }
 
-.bio::before {
-  content: "✿";
-  position: absolute;
-  left: 4%;
-  top: 8%;
-  font-size: 3.5rem;
-  color: var(--ink);
-  opacity: 0.8;
-}
-
-.bio::after {
-  content: "♥";
-  position: absolute;
-  right: 6%;
-  top: 6%;
-  font-size: 2.25rem;
-  color: var(--red);
-  transform: rotate(12deg);
-}
-
 .project:nth-of-type(odd) .placeholder {
   transform: rotate(-2.5deg);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -532,22 +512,12 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-@media (max-width: 768px) {
-  .bio::before,
-  .bio::after {
-    font-size: 1.75rem;
-  }
-}
-
 body {
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420' viewBox='0 0 420 420' fill='none' stroke='%23111' stroke-opacity='.55' stroke-width='1.6'%3E%3Cdefs%3E%3Cg id='f'%3E%3Ccircle cx='9' cy='0' r='7'/%3E%3Ccircle cx='2.8' cy='8.6' r='7'/%3E%3Ccircle cx='-7.3' cy='5.3' r='7'/%3E%3Ccircle cx='-7.3' cy='-5.3' r='7'/%3E%3Ccircle cx='2.8' cy='-8.6' r='7'/%3E%3Ccircle r='3'/%3E%3C/g%3E%3C/defs%3E%3Cuse href='%23f' transform='translate(70 80) scale(1.5)'/%3E%3Cuse href='%23f' transform='translate(300 190) scale(1) rotate(20)'/%3E%3Cuse href='%23f' transform='translate(150 340) scale(.8) rotate(-15)'/%3E%3Ccircle cx='215' cy='60' r='3'/%3E%3Ccircle cx='370' cy='330' r='3'/%3E%3Ccircle cx='30' cy='250' r='2.5'/%3E%3C/svg%3E"),
     radial-gradient(ellipse at 50% 115%, rgba(122, 31, 53, 0.35) 0%, transparent 55%),
     radial-gradient(ellipse at 15% 10%, #f4f4f5 0%, transparent 45%),
     radial-gradient(ellipse at 85% 40%, #bdbdc0 0%, transparent 50%),
     linear-gradient(160deg, #e9e6e7, #c9c7ca);
-  background-size: 420px 420px, auto, auto, auto, auto;
-  background-repeat: repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 .section-intro,
@@ -561,36 +531,6 @@ body {
 
 .resource-card {
   position: relative;
-}
-
-.resource-card::before {
-  content: "✿";
-  position: absolute;
-  top: 14px;
-  right: 22px;
-  font-size: 1.5rem;
-  color: var(--ink);
-}
-
-.resource-card h2::after {
-  content: " ✿";
-  font-size: 0.6em;
-  color: var(--ink);
-  vertical-align: middle;
-}
-
-.overview-card::after {
-  content: "✿";
-  display: block;
-  margin-top: 0.75rem;
-  color: var(--ink);
-}
-
-.process-step h3::after,
-.project-info h3::after {
-  content: " ✿";
-  font-size: 0.7em;
-  color: var(--ink);
 }
 
 .skill-tag {
@@ -635,6 +575,156 @@ footer.resource-card .footer-tools {
   color: var(--blush);
 }
 
-footer.resource-card::before {
-  color: var(--blush);
+footer
+
+.placeholder {
+  background: rgba(122, 31, 53, 0.08);
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.placeholder:hover {
+  background: rgba(122, 31, 53, 0.16);
+}
+
+.placeholder.figma {
+  background: rgba(122, 31, 53, 0.16);
+}
+
+.resource-card h2,
+.overview-card h3,
+.process-step h3,
+.project-info h3,
+.contact-item h3,
+.contact-item a {
+  color: var(--red);
+}
+
+.resource-card {
+  background-color: #fdf8f7;
+  border-color: rgba(122, 31, 53, 0.3);
+}
+
+.navbar {
+  background-color: rgba(253, 244, 243, 0.9);
+}
+
+.overview-card,
+.process-step {
+  background: rgba(241, 220, 217, 0.45);
+  border-color: rgba(122, 31, 53, 0.3);
+}
+
+.btn-play {
+  background: var(--red);
+}
+
+.btn-play:hover {
+  background: var(--wine-deep);
+}
+
+footer.resource-card {
+  background-color: transparent;
+}
+
+::selection {
+  background: var(--red);
+  color: white;
+}
+
+.navbar {
+  border-bottom: 3px solid var(--red);
+}
+
+.navbar-right a.active {
+  background: var(--red);
+  color: white;
+  padding: 0.35em 0.9em;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.navbar-right a:hover:not(.active) {
+  color: var(--red);
+}
+
+.resource-card {
+  border-top: 4px solid var(--red);
+}
+
+.resource-card h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  background: var(--red);
+}
+
+.bio-text h1 {
+  display: inline-block;
+  padding: 0 0.15em;
+  background: linear-gradient(transparent 68%, rgba(122, 31, 53, 0.28) 68%);
+}
+
+.bio-pic img {
+  box-shadow: 0 0 0 6px var(--blush);
+}
+
+.skill-tag {
+  transition: all 0.3s;
+}
+
+.skill-tag:hover {
+  background: var(--red);
+  color: white;
+}
+
+.overview-card {
+  border-top: 4px solid var(--red);
+}
+
+.overview-card:hover {
+  background: rgba(122, 31, 53, 0.12);
+}
+
+.project {
+  border-bottom: 2px solid var(--red);
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+.project-info h3 {
+  border-left: 4px solid var(--red);
+  padding-left: 0.6rem;
+}
+
+.process-step {
+  border-left: 4px solid var(--red);
+}
+
+.contact-icon {
+  border-color: var(--red);
+}
+
+.contact-icon-fallback {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.contact-item a {
+  border-bottom: 2px solid var(--red);
+}
+
+.contact-item a:hover {
+  text-decoration: none;
+  background: var(--red);
+  color: white;
+}
+
+footer.resource-card {
+  border-top: 4px solid var(--rose);
 }
