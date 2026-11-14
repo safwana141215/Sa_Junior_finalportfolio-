@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Safwan Ahmed - Resume" />
+  <meta name="author" content="Safwan Ahmed" />
+  <title>Resume | Safwan Ahmed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="fav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html">
+          <img src="download.jpg" alt="Logo" />
+        </a>
+      </div>
+      <ul class="navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home-card">
+
+    <section class="resource-card">
+      <h2>Resume</h2>
+      <p class="section-intro">Safwan Ahmed · <a href="mailto:Safwana202350@gmail.com" class="resume-link">Safwana202350@gmail.com</a></p>
+
+      <div class="resume-section">
+        <h3>Objective</h3>
+        <p>
+          Enthusiastic high school student with a computer science and digital art background, partaking in game development and web design classes focusing on core coding skills and design elements, an EarSketch competition finalist, a loud and confident presenter, and the person to come to for tech issues.
+        </p>
+      </div>
+
+      <div class="resume-section">
+        <h3>Skills</h3>
+        <ul>
+          <li><strong>Computer science:</strong> game and web development, with 2 years of web and game design classes</li>
+          <li><strong>Tech troubleshooting:</strong> I frequently fix tech problems when people ask for help.</li>
+          <li><strong>Presenting:</strong> I am fluent and confident when speaking in front of groups, putting my attention on the audience.</li>
+          <li><strong>Friendly:</strong> good with people. I stay professional, understand boundaries, and show respect.</li>
+          <li><strong>Hands on:</strong> I am comfortable working with equipment and handling issues that need a more direct approach.</li>
+          <li><strong>Teamwork:</strong> experience collaborating on competition projects and club activities</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3>Education</h3>
+        <h4>Thomas A. Edison CTE High School</h4>
+        <p class="meta">Student expecting to graduate in 2027 · (CTE) program: Web and App Development</p>
+        <ul>
+          <li>Coursework experience: 2 years of web design going into my 3rd year, web design and development, graphic design, and game development</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3>Projects &amp; Experience</h3>
+
+        <h4>Coding &amp; Game Development Competitions</h4>
+        <p class="meta">Sophomore and Junior Year</p>
+        <ul>
+          <li>Finalist, EarSketch 1,2,3 Code Competition</li>
+          <li>Entered the Pencils app creation competition and multiple Games for Change competitions</li>
+          <li>Built apps, websites, and games and presented the projects</li>
+        </ul>
+
+        <h4>Space Science Club</h4>
+        <p class="meta">Member, Thomas A. Edison CTE High School, Sophomore Year</p>
+        <ul>
+          <li>Took part in club activities that built imagination and fueled curiosity about space and science</li>
+        </ul>
+
+        <h4>Tech Support</h4>
+        <ul>
+          <li>Handy with hardware and equipment, often times fixing issues in the school library or other places, have fixed the library printer and computer multiple times, and have helped with other technical issues</li>
+        </ul>
+      </div>
+
+      <div class="resume-actions">
+        <a class="btn-outline" href="resume.pdf" download>Download PDF</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="resource-card">
+    <p>© <span id="year"></span> Safwan Ahmed | Game Design Portfolio</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
